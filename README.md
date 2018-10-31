@@ -85,3 +85,49 @@ int main ()
 ![hasilnya](https://github.com/iisamelia/UTS_Algoritma/blob/master/soal1.cpp/hasil1B.PNG)
 
 
+## Soal 2
+
+**Alur algoritma**
+1. Mendeklarasikan variabel `int N,X,T,Batas` sebagai variabel input
+2. Membaca input dari keyboard `cin >> N `
+3. Masukan nilai **N** yaitu 2 angka terakhir Nim saya, dan batasnya adalah hasil jumlah N+100 
+4. Dimana **T** lebih kecil dari atau sama dengan **Batas**
+5. Kemudian cetak variabel **T**
+
+
+**Kode lengkap program**
+```
+#include<iostream>
+
+using namespace std;
+
+int main ()
+{
+    int N,X,T,Batas;
+
+    cout << "masukan nilai N: ";
+    cin >> N;
+
+
+    Batas = N + 100;
+    X = 20;
+    T = N;
+
+    while ( T <= Batas)
+        { T = T + X;
+          X = X + 10;
+        }
+
+
+    cout << T;
+
+
+}
+```
+
+**hasilnya**
+
+![hasilnya](https://github.com/iisamelia/UTS_Algoritma/blob/master/soal2.cpp/hasil2.PNG)
+
+
+
